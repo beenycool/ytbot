@@ -1,0 +1,5 @@
+
+# Sensitive files
+youtube_token.json
+googlecreds.json
+.env
