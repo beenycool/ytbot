@@ -21,7 +21,9 @@ class RedditContentDiscovery:
         for subreddit_name in TARGET_SUBREDDITS:
             try:
                 subreddit = self.reddit.subreddit(subreddit_name)
-                posts = self._get_hot_posts(subreddit, limit // len(TARGET_SUBREDDITS))
+                # Ensure each subreddit gets at least 1 post to check
+                posts_per_subreddit = max(1, limit // len(TARGET_SUBREDDITS))
+                posts = self._get_hot_posts(subreddit, posts_per_subreddit)
                 all_posts.extend(posts)
                 self.logger.info(f"Found {len(posts)} posts from r/{subreddit_name}")
             except Exception as e:
@@ -128,11 +130,13 @@ class RedditContentDiscovery:
     
     def _get_video_url(self, submission) -> Optional[str]:
         """Extract video URL from submission"""
-        # Reddit video
+        # Reddit video - try fallback URL first, then post URL if needed
         if hasattr(submission, 'is_video') and submission.is_video:
             if hasattr(submission, 'media') and submission.media:
                 if 'reddit_video' in submission.media:
                     return submission.media['reddit_video']['fallback_url']
+            # Fallback to post URL if media not available
+            return f"https://reddit.com{submission.permalink}"
                     
         # Direct video URL
         if hasattr(submission, 'url') and submission.url:

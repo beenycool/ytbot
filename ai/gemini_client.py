@@ -63,15 +63,21 @@ class GeminiClient:
                 ret, frame = cap.read()
                 
                 if ret:
-                    # Convert frame to base64 for Gemini
-                    frame_data = self._frame_to_base64(frame)
-                    timestamp = i / fps
+                    # Convert frame to Gemini-compatible format
+                    import tempfile
+                    import os
                     
-                    frames.append({
-                        'mime_type': 'image/jpeg',
-                        'data': frame_data,
-                        'timestamp': timestamp
-                    })
+                    # Save frame to temporary file
+                    with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as temp_file:
+                        cv2.imwrite(temp_file.name, frame)
+                        temp_path = temp_file.name
+                    
+                    # Upload as file to Gemini
+                    uploaded_file = genai.upload_file(temp_path, mime_type='image/jpeg')
+                    frames.append(uploaded_file)
+                    
+                    # Clean up temp file
+                    os.unlink(temp_path)
                     
                 if len(frames) >= max_frames:
                     break
@@ -83,10 +89,6 @@ class GeminiClient:
             self.logger.error(f"Error extracting frames: {str(e)}")
             return []
     
-    def _frame_to_base64(self, frame) -> str:
-        """Convert OpenCV frame to base64 string"""
-        _, buffer = cv2.imencode('.jpg', frame)
-        return base64.b64encode(buffer).decode('utf-8')
     
     def _create_analysis_prompt(self, title: str, description: str) -> str:
         """Create comprehensive analysis prompt for Gemini"""

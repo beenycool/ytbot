@@ -305,6 +305,10 @@ class InstagramUploader(BaseUploader):
             self.logger.error(f"Error optimizing for reels: {str(e)}")
             return metadata
     
+    def _prepare_metadata(self, metadata: Dict) -> Dict:
+        """Prepare platform-specific metadata"""
+        return self.optimize_for_reels(metadata)
+    
     def _generate_hashtags(self, metadata: Dict) -> list:
         """Generate platform-specific hashtags"""
         return self._generate_instagram_hashtags(metadata)

@@ -6,7 +6,8 @@ from typing import List, Dict, Optional
 import random
 from gtts import gTTS
 import io
-from pydub import AudioSegment
+import subprocess
+import tempfile
 from config.settings import *
 
 class TTSGenerator:
@@ -18,7 +19,8 @@ class TTSGenerator:
     async def generate_tts_audio(self, tts_script: List[Dict], post_id: str) -> Optional[str]:
         """Generate TTS audio from script using Edge-TTS"""
         try:
-            audio_segments = []
+            audio_files = []
+            temp_files = []
             
             for i, tts_item in enumerate(tts_script):
                 text = tts_item.get('text', '').strip()
@@ -30,30 +32,42 @@ class TTSGenerator:
                 # Generate audio for this text
                 audio_data = await self._generate_edge_tts(text, post_id, i)
                 if audio_data:
-                    # Load as audio segment
-                    audio_segment = AudioSegment.from_file(io.BytesIO(audio_data), format="mp3")
-                    audio_segments.append(audio_segment)
+                    # Save to temporary file
+                    temp_file = tempfile.NamedTemporaryFile(suffix=".mp3", delete=False)
+                    temp_file.write(audio_data)
+                    temp_file.close()
+                    audio_files.append(temp_file.name)
+                    temp_files.append(temp_file.name)
                     
-                    # Add pause if specified
+                    # Add pause if specified (create silence file)
                     if pause_duration > 0:
-                        silence = AudioSegment.silent(duration=int(pause_duration * 1000))
-                        audio_segments.append(silence)
+                        silence_file = self._create_silence_file(pause_duration)
+                        if silence_file:
+                            audio_files.append(silence_file)
+                            temp_files.append(silence_file)
             
-            if not audio_segments:
-                self.logger.warning("No audio segments generated")
+            if not audio_files:
+                self.logger.warning("No audio files generated")
                 return None
             
-            # Combine all audio segments
-            final_audio = sum(audio_segments)
-            
-            # Save combined audio
+            # Combine all audio files using ffmpeg
             output_filename = f"tts_{post_id}.mp3"
             output_path = self.output_dir / output_filename
             
-            final_audio.export(str(output_path), format="mp3", bitrate="128k")
+            success = self._combine_audio_files(audio_files, str(output_path))
             
-            self.logger.info(f"TTS audio generated: {output_filename}")
-            return str(output_path)
+            # Cleanup temporary files
+            for temp_file in temp_files:
+                try:
+                    Path(temp_file).unlink()
+                except:
+                    pass
+            
+            if success:
+                self.logger.info(f"TTS audio generated: {output_filename}")
+                return str(output_path)
+            else:
+                return None
             
         except Exception as e:
             self.logger.error(f"Error generating TTS audio: {str(e)}")
@@ -96,6 +110,68 @@ class TTSGenerator:
         except Exception as e:
             self.logger.error(f"Error with gTTS fallback: {str(e)}")
             return None
+    
+    def _create_silence_file(self, duration_seconds: float) -> Optional[str]:
+        """Create a silence audio file using ffmpeg"""
+        try:
+            temp_file = tempfile.NamedTemporaryFile(suffix=".mp3", delete=False)
+            temp_file.close()
+            
+            # Create silence using ffmpeg
+            cmd = [
+                'ffmpeg', '-f', 'lavfi', '-i', f'anullsrc=r=44100:cl=stereo',
+                '-t', str(duration_seconds), '-c:a', 'mp3', '-y', temp_file.name
+            ]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            
+            if result.returncode == 0:
+                return temp_file.name
+            else:
+                self.logger.warning(f"Failed to create silence file: {result.stderr}")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Error creating silence file: {str(e)}")
+            return None
+    
+    def _combine_audio_files(self, audio_files: List[str], output_path: str) -> bool:
+        """Combine audio files using ffmpeg"""
+        try:
+            if len(audio_files) == 1:
+                # Just copy the single file
+                cmd = ['ffmpeg', '-i', audio_files[0], '-c', 'copy', '-y', output_path]
+            else:
+                # Create concat file list
+                concat_file = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
+                for audio_file in audio_files:
+                    concat_file.write(f"file '{audio_file}'\n")
+                concat_file.close()
+                
+                # Combine using concat
+                cmd = [
+                    'ffmpeg', '-f', 'concat', '-safe', '0', '-i', concat_file.name,
+                    '-c', 'copy', '-y', output_path
+                ]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            
+            # Cleanup concat file if created
+            if len(audio_files) > 1:
+                try:
+                    Path(concat_file.name).unlink()
+                except:
+                    pass
+            
+            if result.returncode == 0:
+                return True
+            else:
+                self.logger.error(f"Failed to combine audio files: {result.stderr}")
+                return False
+                
+        except Exception as e:
+            self.logger.error(f"Error combining audio files: {str(e)}")
+            return False
     
     def create_engagement_tts(self, analysis: Dict, post_id: str) -> List[Dict]:
         """Create TTS script with engagement hooks"""

@@ -228,6 +228,67 @@ class TikTokUploader(BaseUploader):
             self.logger.error(f"Error generating hashtags: {str(e)}")
             return ['#fyp', '#viral', '#amazing']
     
+    def _prepare_metadata(self, metadata: Dict) -> Dict:
+        """Prepare platform-specific metadata for TikTok"""
+        try:
+            # Optimize metadata for TikTok platform
+            prepared_metadata = {
+                'title': self._create_title(metadata),
+                'description': self._create_description(metadata),
+                'hashtags': self._generate_tiktok_hashtags(metadata),
+                'privacy_level': 'SELF_ONLY',  # Start with private
+                'disable_duet': False,
+                'disable_comment': False,
+                'disable_stitch': False,
+                'video_cover_timestamp_ms': 1000
+            }
+            
+            # Add original metadata
+            prepared_metadata.update({
+                'original_title': metadata.get('title', ''),
+                'subreddit': metadata.get('subreddit', ''),
+                'reddit_url': metadata.get('reddit_url', ''),
+                'source': 'reddit'
+            })
+            
+            return prepared_metadata
+            
+        except Exception as e:
+            self.logger.error(f"Error preparing metadata: {str(e)}")
+            return self._get_default_metadata()
+
+    def _create_description(self, metadata: Dict) -> str:
+        """Create TikTok-style description"""
+        try:
+            title = metadata.get('title', 'Amazing content!')
+            subreddit = metadata.get('subreddit', '')
+            
+            # TikTok descriptions are shorter and more casual
+            description = f"{title}\n\n"
+            
+            if subreddit:
+                description += f"From r/{subreddit} 🔥\n\n"
+            
+            description += "Follow for more amazing content! 🚀"
+            
+            return description[:150]  # TikTok description limit
+            
+        except Exception as e:
+            self.logger.error(f"Error creating description: {str(e)}")
+            return "Amazing content! Follow for more! 🚀"
+
+    def _get_default_metadata(self) -> Dict:
+        """Get default metadata if preparation fails"""
+        return {
+            'title': 'Amazing content! #fyp #viral',
+            'description': 'Check out this amazing content! Follow for more! 🚀',
+            'hashtags': ['#fyp', '#viral', '#amazing'],
+            'privacy_level': 'SELF_ONLY',
+            'disable_duet': False,
+            'disable_comment': False,
+            'disable_stitch': False
+        }
+
     def _get_file_size(self, file_path: str) -> int:
         """Get file size in bytes"""
         return self.get_file_size(file_path)

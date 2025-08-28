@@ -4,19 +4,19 @@ Provides modular database functionality split into focused components
 """
 
 from .base_db import DatabaseBase
-from .content_tracker import ContentTracker
+from .content_tracker import ContentTracker as _ContentTracker
 from .statistics_manager import StatisticsManager
 from .maintenance import DatabaseMaintenance
 
 # Legacy compatibility - maintain original interface
-class ContentTrackerLegacy(ContentTracker, StatisticsManager, DatabaseMaintenance):
+class ContentTrackerLegacy(_ContentTracker, StatisticsManager, DatabaseMaintenance):
     """
     Legacy ContentTracker class that combines all database functionality
     Maintains backward compatibility with existing code
     """
     
     def __init__(self):
-        ContentTracker.__init__(self)
+        _ContentTracker.__init__(self)
         StatisticsManager.__init__(self)
         DatabaseMaintenance.__init__(self)
         

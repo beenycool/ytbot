@@ -1,0 +1,484 @@
+2025-08-17 19:36:19,978 - upload.base_uploader.youtube - INFO - Starting OAuth flow - browser window will open for authentication
+2025-08-17 19:36:20,025 - upload.base_uploader.youtube - ERROR - Error in OAuth flow: Extra data: line 1 column 12 (char 11)
+2025-08-17 19:36:20,025 - upload.base_uploader.youtube - ERROR - Failed to obtain YouTube credentials
+2025-08-17 19:41:13,459 - upload.base_uploader.youtube - INFO - Starting OAuth flow - browser window will open for authentication
+2025-08-17 19:42:55,249 - upload.base_uploader.youtube - INFO - Starting OAuth flow - browser window will open for authentication
+2025-08-17 19:44:19,864 - upload.base_uploader.youtube - INFO - Starting OAuth flow - browser window will open for authentication
+2025-08-17 19:46:50,275 - upload.base_uploader.youtube - INFO - Starting OAuth flow - browser window will open for authentication
+2025-08-17 19:50:16,738 - upload.base_uploader.youtube - INFO - Starting OAuth flow - browser window will open for authentication
+2025-08-19 12:00:21,343 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-19 12:00:21,343 - upload.base_uploader.youtube - ERROR - Error in OAuth flow: EOF when reading a line
+2025-08-19 12:00:21,343 - upload.base_uploader.youtube - ERROR - Failed to obtain YouTube credentials
+2025-08-19 12:01:11,641 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-19 12:01:11,641 - upload.base_uploader.youtube - ERROR - Error in OAuth flow: EOF when reading a line
+2025-08-19 12:01:11,641 - upload.base_uploader.youtube - ERROR - Failed to obtain YouTube credentials
+2025-08-19 12:02:03,655 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-19 12:02:03,656 - upload.base_uploader.youtube - ERROR - Error in OAuth flow: EOF when reading a line
+2025-08-19 12:02:03,656 - upload.base_uploader.youtube - ERROR - Failed to obtain YouTube credentials
+2025-08-19 12:02:03,737 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-19 12:02:03,737 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-19 12:02:03,738 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-19 12:02:03,738 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-19 12:02:03,738 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-19 12:02:03,739 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/interestingasfuck
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/nextfuckinglevel
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/blackmagicfuckery
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/oddlysatisfying
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/unexpected
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-19 12:02:03,739 - reddit.discovery - INFO - Found 0 posts from r/toptalent
+2025-08-19 12:02:03,739 - __main__ - WARNING - No trending posts found
+2025-08-20 13:07:16,243 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-20 13:08:49,041 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-20 13:08:49,041 - upload.base_uploader.youtube - ERROR - Error in OAuth flow: EOF when reading a line
+2025-08-20 13:08:49,041 - upload.base_uploader.youtube - ERROR - Failed to obtain YouTube credentials
+2025-08-20 13:08:49,043 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:08:49,043 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:08:49,043 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:08:49,043 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:08:49,044 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:08:49,044 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/interestingasfuck
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/nextfuckinglevel
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/blackmagicfuckery
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/oddlysatisfying
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/unexpected
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:08:49,044 - reddit.discovery - INFO - Found 0 posts from r/toptalent
+2025-08-20 13:08:49,044 - __main__ - WARNING - No trending posts found
+2025-08-20 13:09:13,441 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-20 13:10:34,756 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-20 13:10:34,756 - upload.base_uploader.youtube - ERROR - Error in OAuth flow: EOF when reading a line
+2025-08-20 13:10:34,756 - upload.base_uploader.youtube - ERROR - Failed to obtain YouTube credentials
+2025-08-20 13:10:34,757 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:10:34,757 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:10:34,758 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:10:34,758 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:10:34,758 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:10:34,758 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/interestingasfuck
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/nextfuckinglevel
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/blackmagicfuckery
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/oddlysatisfying
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/unexpected
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:10:34,759 - reddit.discovery - INFO - Found 0 posts from r/toptalent
+2025-08-20 13:10:34,759 - __main__ - WARNING - No trending posts found
+2025-08-20 13:10:46,426 - upload.base_uploader.youtube - INFO - Starting headless OAuth flow
+2025-08-20 13:11:21,389 - upload.base_uploader.youtube - INFO - Headless OAuth flow completed successfully
+2025-08-20 13:11:21,389 - upload.base_uploader.youtube - INFO - Saved YouTube credentials to token file
+2025-08-20 13:11:21,392 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:11:21,401 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:11:21,402 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:11:21,402 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:11:21,403 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:11:21,403 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:11:21,403 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:11:21,403 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:11:21,403 - reddit.discovery - INFO - Found 0 posts from r/interestingasfuck
+2025-08-20 13:11:21,403 - reddit.discovery - INFO - Found 0 posts from r/nextfuckinglevel
+2025-08-20 13:11:21,403 - reddit.discovery - INFO - Found 0 posts from r/blackmagicfuckery
+2025-08-20 13:11:21,403 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:11:21,403 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:11:21,403 - reddit.discovery - INFO - Found 0 posts from r/oddlysatisfying
+2025-08-20 13:11:21,404 - reddit.discovery - INFO - Found 0 posts from r/unexpected
+2025-08-20 13:11:21,404 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-20 13:11:21,404 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:11:21,404 - reddit.discovery - INFO - Found 0 posts from r/toptalent
+2025-08-20 13:11:21,404 - __main__ - WARNING - No trending posts found
+2025-08-20 13:12:46,264 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:12:46,330 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:12:46,330 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:12:46,332 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:12:46,332 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:12:46,332 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:12:46,333 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:12:46,333 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/interestingasfuck
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/nextfuckinglevel
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/blackmagicfuckery
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/oddlysatisfying
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/unexpected
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:12:46,333 - reddit.discovery - INFO - Found 0 posts from r/toptalent
+2025-08-20 13:12:46,333 - __main__ - WARNING - No trending posts found
+2025-08-20 13:16:30,262 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:16:30,268 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:16:30,269 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:16:30,269 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:16:30,270 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:16:30,270 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:16:30,270 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:16:30,270 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:16:30,270 - reddit.discovery - INFO - Found 0 posts from r/interestingasfuck
+2025-08-20 13:16:30,270 - reddit.discovery - INFO - Found 0 posts from r/nextfuckinglevel
+2025-08-20 13:16:30,270 - reddit.discovery - INFO - Found 0 posts from r/blackmagicfuckery
+2025-08-20 13:16:30,270 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:16:30,270 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:16:30,271 - reddit.discovery - INFO - Found 0 posts from r/oddlysatisfying
+2025-08-20 13:16:30,271 - reddit.discovery - INFO - Found 0 posts from r/unexpected
+2025-08-20 13:16:30,271 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-20 13:16:30,271 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:16:30,271 - reddit.discovery - INFO - Found 0 posts from r/toptalent
+2025-08-20 13:16:30,271 - __main__ - WARNING - No trending posts found
+2025-08-20 13:17:51,056 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:17:51,062 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:17:51,062 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:17:51,063 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:17:51,063 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:17:51,063 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:17:51,063 - __main__ - INFO - Starting full pipeline - processing 5 posts
+2025-08-20 13:17:51,063 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:17:51,064 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:51,502 - reddit.discovery - INFO - Found 1 posts from r/interestingasfuck
+2025-08-20 13:17:51,502 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:51,673 - reddit.discovery - INFO - Found 2 posts from r/nextfuckinglevel
+2025-08-20 13:17:51,673 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:51,871 - reddit.discovery - INFO - Found 1 posts from r/blackmagicfuckery
+2025-08-20 13:17:51,871 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:52,034 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:17:52,034 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:52,213 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:17:52,213 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:52,382 - reddit.discovery - INFO - Found 2 posts from r/oddlysatisfying
+2025-08-20 13:17:52,382 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:52,569 - reddit.discovery - INFO - Found 1 posts from r/unexpected
+2025-08-20 13:17:52,570 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:52,802 - reddit.discovery - INFO - Found 1 posts from r/damnthatsinteresting
+2025-08-20 13:17:52,802 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:53,019 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:17:53,019 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:17:53,240 - reddit.discovery - INFO - Found 1 posts from r/toptalent
+2025-08-20 13:17:53,240 - __main__ - INFO - Found 9 potential posts
+2025-08-20 13:17:53,241 - __main__ - INFO - Processing post: this man taking a picture with his plants as they ...
+2025-08-20 13:17:53,241 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:54,439 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/haw1zhbgv2kf1/DASH_1080.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:54,439 - __main__ - ERROR - Failed to process post: this man taking a picture with his plants as they ...
+2025-08-20 13:17:54,439 - __main__ - INFO - Processing post: Physics bottle trick....
+2025-08-20 13:17:54,439 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:54,628 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/2rexp3tly2kf1/DASH_720.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:54,628 - __main__ - ERROR - Failed to process post: Physics bottle trick....
+2025-08-20 13:17:54,629 - __main__ - INFO - Processing post: Ok that make sense...
+2025-08-20 13:17:54,629 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:54,754 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/rl51j11293kf1/DASH_360.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:54,755 - __main__ - ERROR - Failed to process post: Ok that make sense...
+2025-08-20 13:17:54,755 - __main__ - INFO - Processing post: The hallgrímskirkja in Reykjavik, Iceland.....
+2025-08-20 13:17:54,755 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:54,952 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/ci40tih3b5kf1/DASH_720.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:54,952 - __main__ - ERROR - Failed to process post: The hallgrímskirkja in Reykjavik, Iceland.....
+2025-08-20 13:17:54,952 - __main__ - INFO - Processing post: When you order the next beer at a mountain hut abo...
+2025-08-20 13:17:54,952 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:55,229 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/8aeq2xs635kf1/DASH_480.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:55,229 - __main__ - ERROR - Failed to process post: When you order the next beer at a mountain hut abo...
+2025-08-20 13:17:55,229 - __main__ - INFO - Processing post: An efficient way of growing food...
+2025-08-20 13:17:55,230 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:55,446 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/65866y4c54kf1/DASH_1080.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:55,446 - __main__ - ERROR - Failed to process post: An efficient way of growing food...
+2025-08-20 13:17:55,447 - __main__ - INFO - Processing post: When he village kids have to much time on their ha...
+2025-08-20 13:17:55,447 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:55,647 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/1gl16blfd1kf1/DASH_360.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:55,648 - __main__ - ERROR - Failed to process post: When he village kids have to much time on their ha...
+2025-08-20 13:17:55,648 - __main__ - INFO - Processing post: Heat index was 110 degrees so they offered him a c...
+2025-08-20 13:17:55,648 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:55,851 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/rm2ftqh4q5kf1/DASH_360.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:55,851 - __main__ - ERROR - Failed to process post: Heat index was 110 degrees so they offered him a c...
+2025-08-20 13:17:55,852 - __main__ - INFO - Processing post: Surely 'this' is actual magic this time...
+2025-08-20 13:17:55,852 - __main__ - INFO - Downloading video...
+2025-08-20 13:17:56,052 - reddit.downloader - ERROR - Error downloading video from https://v.redd.it/ftudz1nbc5kf1/DASH_1080.mp4?source=fallback: 'NoneType' object has no attribute 'get'
+2025-08-20 13:17:56,052 - __main__ - ERROR - Failed to process post: Surely 'this' is actual magic this time...
+2025-08-20 13:17:56,052 - __main__ - INFO - Pipeline completed: 0 processed, 0 uploaded, 9 failed
+2025-08-20 13:22:04,441 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:22:04,447 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:22:04,448 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:22:04,448 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:22:04,448 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:22:04,448 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:22:04,449 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:22:04,449 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/interestingasfuck
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/nextfuckinglevel
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/blackmagicfuckery
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/oddlysatisfying
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/unexpected
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:22:04,449 - reddit.discovery - INFO - Found 0 posts from r/toptalent
+2025-08-20 13:22:04,449 - __main__ - WARNING - No trending posts found
+2025-08-20 13:22:26,039 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:22:26,045 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:22:26,045 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:22:26,046 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:22:26,046 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:22:26,046 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:22:26,046 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:22:26,046 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:22:26,047 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:26,377 - reddit.discovery - INFO - Found 1 posts from r/interestingasfuck
+2025-08-20 13:22:26,377 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:26,569 - reddit.discovery - INFO - Found 2 posts from r/nextfuckinglevel
+2025-08-20 13:22:26,570 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:26,740 - reddit.discovery - INFO - Found 1 posts from r/blackmagicfuckery
+2025-08-20 13:22:26,741 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:26,901 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:22:26,901 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:27,096 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:22:27,096 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:27,258 - reddit.discovery - INFO - Found 2 posts from r/oddlysatisfying
+2025-08-20 13:22:27,258 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:27,458 - reddit.discovery - INFO - Found 1 posts from r/unexpected
+2025-08-20 13:22:27,459 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:27,704 - reddit.discovery - INFO - Found 1 posts from r/damnthatsinteresting
+2025-08-20 13:22:27,704 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:27,914 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:22:27,915 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:22:28,169 - reddit.discovery - INFO - Found 1 posts from r/toptalent
+2025-08-20 13:22:28,169 - __main__ - INFO - Found 2 potential posts
+2025-08-20 13:22:28,169 - __main__ - INFO - Processing post: this man taking a picture with his plants as they ...
+2025-08-20 13:22:28,169 - __main__ - INFO - Downloading video...
+2025-08-20 13:22:28,169 - reddit.downloader - INFO - Downloading Reddit video: https://v.redd.it/haw1zhbgv2kf1/DASH_1080.mp4?source=fallback
+2025-08-20 13:22:28,446 - reddit.downloader - INFO - Successfully downloaded Reddit video: 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:22:28,446 - __main__ - INFO - Analyzing video with Gemini...
+2025-08-20 13:22:37,025 - ai.gemini_client - ERROR - Error analyzing video downloads/1mv1j2b_ac8757fa.mp4: Unknown field for Blob: timestamp
+2025-08-20 13:22:37,027 - __main__ - ERROR - Failed to process post: this man taking a picture with his plants as they ...
+2025-08-20 13:22:37,028 - __main__ - INFO - Processing post: Physics bottle trick....
+2025-08-20 13:22:37,028 - __main__ - INFO - Downloading video...
+2025-08-20 13:22:37,028 - reddit.downloader - INFO - Downloading Reddit video: https://v.redd.it/2rexp3tly2kf1/DASH_720.mp4?source=fallback
+2025-08-20 13:22:37,335 - reddit.downloader - INFO - Successfully downloaded Reddit video: 1mv1w0k_403c9f66.mp4
+2025-08-20 13:22:37,336 - __main__ - INFO - Analyzing video with Gemini...
+2025-08-20 13:22:42,530 - ai.gemini_client - ERROR - Error analyzing video downloads/1mv1w0k_403c9f66.mp4: Unknown field for Blob: timestamp
+2025-08-20 13:22:42,530 - __main__ - ERROR - Failed to process post: Physics bottle trick....
+2025-08-20 13:22:42,530 - __main__ - INFO - Pipeline completed: 0 processed, 0 uploaded, 2 failed
+2025-08-20 13:24:16,326 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:24:16,332 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:24:16,333 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:24:16,333 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:24:16,333 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:24:16,333 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:24:16,334 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:24:16,334 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:24:16,334 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:17,966 - reddit.discovery - INFO - Found 1 posts from r/interestingasfuck
+2025-08-20 13:24:17,967 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:18,152 - reddit.discovery - INFO - Found 2 posts from r/nextfuckinglevel
+2025-08-20 13:24:18,152 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:18,328 - reddit.discovery - INFO - Found 1 posts from r/blackmagicfuckery
+2025-08-20 13:24:18,328 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:18,511 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:24:18,512 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:18,729 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:24:18,730 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:18,888 - reddit.discovery - INFO - Found 2 posts from r/oddlysatisfying
+2025-08-20 13:24:18,888 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:19,073 - reddit.discovery - INFO - Found 1 posts from r/unexpected
+2025-08-20 13:24:19,073 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:19,304 - reddit.discovery - INFO - Found 1 posts from r/damnthatsinteresting
+2025-08-20 13:24:19,304 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:19,561 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:24:19,561 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:24:19,784 - reddit.discovery - INFO - Found 1 posts from r/toptalent
+2025-08-20 13:24:19,784 - __main__ - INFO - Found 2 potential posts
+2025-08-20 13:24:19,784 - __main__ - INFO - Processing post: this man taking a picture with his plants as they ...
+2025-08-20 13:24:19,784 - __main__ - INFO - Downloading video...
+2025-08-20 13:24:19,784 - reddit.downloader - INFO - Downloading Reddit video: https://v.redd.it/haw1zhbgv2kf1/DASH_1080.mp4?source=fallback
+2025-08-20 13:24:20,048 - reddit.downloader - INFO - Successfully downloaded Reddit video: 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:24:20,048 - __main__ - INFO - Analyzing video with Gemini...
+2025-08-20 13:25:00,599 - ai.gemini_client - INFO - Successfully analyzed video: 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:25:00,599 - __main__ - INFO - Creating processing plan...
+2025-08-20 13:25:02,133 - ai.analysis - ERROR - Error analyzing motion patterns: OpenCV(4.12.0) /io/opencv/modules/video/src/lkpyramid.cpp:1281: error: (-215:Assertion failed) (npoints = prevPtsMat.checkVector(2, CV_32F, true)) >= 0 in function 'calc'
+
+2025-08-20 13:25:38,333 - ai.analysis - INFO - Complete analysis created for 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:25:38,333 - __main__ - INFO - Generating TTS audio...
+2025-08-20 13:25:46,133 - processing.tts_generator - INFO - TTS audio generated: tts_1mv1j2b.mp3
+2025-08-20 13:25:46,133 - __main__ - INFO - Processing video...
+2025-08-20 13:25:46,133 - processing.video_editor - INFO - Starting video processing: 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:25:47,927 - processing.video_editor - INFO - Applied primary cut: 0.00s - 23.40s
+2025-08-20 13:25:47,927 - processing.video_editor - ERROR - Error applying cropping: name 'crop' is not defined
+2025-08-20 13:25:47,927 - processing.video_editor - INFO - Applied zoom effect at 15.0s
+2025-08-20 13:25:47,927 - processing.video_editor - INFO - Applied transition effect at 30.0s
+2025-08-20 13:25:47,927 - processing.video_editor - INFO - Applied color_filter effect at 10.0s
+2025-08-20 13:25:48,227 - processing.video_editor - INFO - Resized video to 1080x1920
+2025-08-20 13:41:09,544 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-20 13:41:09,553 - upload.base_uploader.youtube - INFO - YouTube service initialized successfully
+2025-08-20 13:41:09,554 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:41:09,554 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:41:09,555 - utils.database.maintenance - INFO - Content tracking tables initialized successfully
+2025-08-20 13:41:09,555 - __main__ - INFO - YouTube Shorts Bot initialized successfully
+2025-08-20 13:41:09,555 - __main__ - INFO - Starting full pipeline - processing 1 posts
+2025-08-20 13:41:09,555 - __main__ - INFO - Step 1: Discovering trending content from Reddit
+2025-08-20 13:41:09,555 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:09,929 - reddit.discovery - INFO - Found 1 posts from r/interestingasfuck
+2025-08-20 13:41:09,929 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:10,118 - reddit.discovery - INFO - Found 2 posts from r/nextfuckinglevel
+2025-08-20 13:41:10,118 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:10,277 - reddit.discovery - INFO - Found 1 posts from r/blackmagicfuckery
+2025-08-20 13:41:10,278 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:10,445 - reddit.discovery - INFO - Found 0 posts from r/todayilearned
+2025-08-20 13:41:10,445 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:10,633 - reddit.discovery - INFO - Found 0 posts from r/mildlyinteresting
+2025-08-20 13:41:10,633 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:10,824 - reddit.discovery - INFO - Found 2 posts from r/oddlysatisfying
+2025-08-20 13:41:10,824 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:11,021 - reddit.discovery - INFO - Found 2 posts from r/unexpected
+2025-08-20 13:41:11,021 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:11,743 - reddit.discovery - INFO - Found 0 posts from r/damnthatsinteresting
+2025-08-20 13:41:11,743 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:11,977 - reddit.discovery - INFO - Found 0 posts from r/beamazed
+2025-08-20 13:41:11,977 - praw - WARNING - It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-08-20 13:41:12,213 - reddit.discovery - INFO - Found 1 posts from r/toptalent
+2025-08-20 13:41:12,213 - __main__ - INFO - Found 2 potential posts
+2025-08-20 13:41:12,214 - __main__ - INFO - Processing post: this man taking a picture with his plants as they ...
+2025-08-20 13:41:12,214 - __main__ - INFO - Downloading video...
+2025-08-20 13:41:12,214 - reddit.downloader - INFO - Downloading Reddit video: https://v.redd.it/haw1zhbgv2kf1/DASH_1080.mp4?source=fallback
+2025-08-20 13:41:12,552 - reddit.downloader - INFO - Successfully downloaded Reddit video: 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:41:12,552 - __main__ - INFO - Analyzing video with Gemini...
+2025-08-20 13:41:53,815 - ai.gemini_client - INFO - Successfully analyzed video: 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:41:53,815 - __main__ - INFO - Creating processing plan...
+2025-08-20 13:41:55,226 - ai.analysis - ERROR - Error analyzing motion patterns: OpenCV(4.12.0) /io/opencv/modules/video/src/lkpyramid.cpp:1281: error: (-215:Assertion failed) (npoints = prevPtsMat.checkVector(2, CV_32F, true)) >= 0 in function 'calc'
+
+2025-08-20 13:42:31,629 - ai.analysis - INFO - Complete analysis created for 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:42:31,629 - __main__ - INFO - Generating TTS audio...
+2025-08-20 13:42:39,535 - processing.tts_generator - INFO - TTS audio generated: tts_1mv1j2b.mp3
+2025-08-20 13:42:39,535 - __main__ - INFO - Processing video...
+2025-08-20 13:42:39,535 - processing.video_editor - INFO - Starting video processing: 1mv1j2b_ac8757fa.mp4
+2025-08-20 13:42:40,730 - processing.video_editor - INFO - Applied primary cut: 0.00s - 23.40s
+2025-08-20 13:42:40,730 - processing.video_editor - ERROR - Error applying cropping: 'module' object is not callable
+2025-08-20 13:42:40,730 - processing.video_editor - INFO - Applied zoom effect at 2.0s
+2025-08-20 13:42:40,730 - processing.video_editor - INFO - Applied transition effect at 15.0s
+2025-08-20 13:42:40,730 - processing.video_editor - ERROR - Error applying slow motion: t_start (52.00) should be smaller than the clip's duration (23.40).
+2025-08-20 13:42:40,730 - processing.video_editor - INFO - Applied slow_motion effect at 0s
+2025-08-20 13:42:41,132 - processing.video_editor - INFO - Resized video to 1080x1920

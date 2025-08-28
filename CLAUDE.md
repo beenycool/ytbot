@@ -29,6 +29,33 @@ pip install -r requirements.txt
 # Setup environment variables (copy .env.example to .env first)
 # Required: REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, GEMINI_API_KEY
 # Optional: YOUTUBE_*, INSTAGRAM_*, TIKTOK_* (for uploads)
+# Headless mode: HEADLESS_AUTH=true (for servers without GUI)
+```
+
+### Headless Authentication (Server Mode)
+For environments without GUI (servers, Docker containers, etc.):
+
+1. Set `HEADLESS_AUTH=true` in your .env file
+2. When running the bot, if YouTube authentication is needed, you'll see:
+   - A URL to copy and paste into your browser
+   - Instructions to complete authentication manually
+   - A prompt to paste back the redirect URL containing the auth code
+
+```bash
+# Example headless authentication flow:
+export HEADLESS_AUTH=true
+python main.py --mode batch --limit 1
+
+# Follow the on-screen instructions:
+# 1. Copy the provided URL to your browser
+# 2. Complete authentication 
+# 3. Copy the localhost redirect URL (even if it shows 404)
+# 4. Paste it back into the terminal
+```
+
+Alternatively, you can use the export BROWSER=echo workaround:
+```bash
+export BROWSER=echo && python3 main.py --mode batch --limit 1
 ```
 
 ### Testing and Validation

@@ -25,6 +25,9 @@ TIKTOK_CLIENT_KEY = os.getenv('TIKTOK_CLIENT_KEY')
 TIKTOK_CLIENT_SECRET = os.getenv('TIKTOK_CLIENT_SECRET')
 TIKTOK_ACCESS_TOKEN = os.getenv('TIKTOK_ACCESS_TOKEN')
 
+# Headless Authentication (for servers without GUI)
+HEADLESS_AUTH = os.getenv('HEADLESS_AUTH', 'false').lower() == 'true'
+
 # Content Discovery Settings
 TARGET_SUBREDDITS = [
     'interestingasfuck',
@@ -46,9 +49,9 @@ OUTPUT_RESOLUTION = (1080, 1920)  # 9:16 aspect ratio
 VIDEO_QUALITY = 'best[height<=1080]'
 
 # Content Filtering
-MIN_UPVOTES = 1000
-MIN_COMMENTS = 50
-CONTENT_AGE_HOURS = 24
+MIN_UPVOTES = 500
+MIN_COMMENTS = 25
+CONTENT_AGE_HOURS = 72
 
 # TTS Settings
 TTS_LANGUAGE = 'en'

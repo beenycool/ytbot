@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
 import logging
-from moviepy.editor import *
+from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, concatenate_videoclips
+from moviepy.video.fx import crop, speedx
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 import json

@@ -6,6 +6,7 @@ from pathlib import Path
 import requests
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
@@ -17,42 +18,122 @@ class YouTubeUploader(BaseUploader):
         super().__init__('youtube')
         self.credentials = None
         self.youtube_service = None
+        self.scopes = ['https://www.googleapis.com/auth/youtube.upload']
+        self.token_file = 'youtube_token.json'
+        self.credentials_file = 'googlecreds.json'
         self._setup_credentials()
         
     def _setup_credentials(self):
-        """Setup YouTube API credentials"""
+        """Setup YouTube API credentials with OAuth flow"""
         try:
-            # For production, you'll need proper OAuth2 flow
-            # This is a simplified version for the bot
-            self.credentials = {
-                'client_id': YOUTUBE_CLIENT_ID,
-                'client_secret': YOUTUBE_CLIENT_SECRET,
-                'refresh_token': YOUTUBE_REFRESH_TOKEN
-            }
+            creds = None
+            
+            # Check if token file exists
+            if os.path.exists(self.token_file):
+                creds = Credentials.from_authorized_user_file(self.token_file, self.scopes)
+            
+            # If there are no (valid) credentials available, let the user log in
+            if not creds or not creds.valid:
+                if creds and creds.expired and creds.refresh_token:
+                    try:
+                        creds.refresh(Request())
+                        self.logger.info("Refreshed existing YouTube credentials")
+                    except Exception as e:
+                        self.logger.warning(f"Failed to refresh token, starting new OAuth flow: {e}")
+                        creds = None
+                
+                if not creds:
+                    creds = self._run_oauth_flow()
+                
+                # Save the credentials for the next run
+                if creds:
+                    with open(self.token_file, 'w') as token:
+                        token.write(creds.to_json())
+                    self.logger.info("Saved YouTube credentials to token file")
+            
+            self.credentials = creds
             
             # Build YouTube service
-            self.youtube_service = self._build_service()
+            if creds:
+                self.youtube_service = self._build_service()
+                self.logger.info("YouTube service initialized successfully")
+            else:
+                self.logger.error("Failed to obtain YouTube credentials")
             
         except Exception as e:
             self.logger.error(f"Error setting up YouTube credentials: {str(e)}")
     
+    def _run_oauth_flow(self):
+        """Run OAuth flow to get credentials"""
+        try:
+            if not os.path.exists(self.credentials_file):
+                self.logger.error(f"Credentials file not found: {self.credentials_file}")
+                return None
+            
+            flow = InstalledAppFlow.from_client_secrets_file(
+                self.credentials_file, self.scopes)
+            
+            if HEADLESS_AUTH:
+                self.logger.info("Starting headless OAuth flow")
+                
+                # Set redirect URI for headless mode
+                flow.redirect_uri = 'urn:ietf:wg:oauth:2.0:oob'
+                
+                # Get the auth URL and display instructions
+                auth_url, _ = flow.authorization_url(prompt='consent')
+                
+                print("\n" + "=" * 60)
+                print("HEADLESS AUTHENTICATION MODE")
+                print("=" * 60)
+                print("1. Copy this URL and paste it into your browser:")
+                print(f"\n   {auth_url}\n")
+                print("2. Complete the authentication process")
+                print("3. You'll see an authorization code displayed on the page")
+                print("4. Copy the authorization code and paste it back here")
+                print("=" * 60)
+                
+                # Wait for user to paste the authorization code
+                auth_code = input("\nPaste the authorization code here: ").strip()
+                
+                if not auth_code:
+                    self.logger.error("No authorization code provided")
+                    return None
+                
+                # Exchange the authorization code for credentials
+                try:
+                    flow.fetch_token(code=auth_code)
+                    creds = flow.credentials
+                    
+                    self.logger.info("Headless OAuth flow completed successfully")
+                    return creds
+                    
+                except Exception as e:
+                    self.logger.error(f"Error processing authorization code: {str(e)}")
+                    return None
+            
+            else:
+                self.logger.info("Starting OAuth flow - browser window will open for authentication")
+                
+                # Run local server for OAuth callback
+                creds = flow.run_local_server(port=0, open_browser=True)
+                
+                self.logger.info("OAuth flow completed successfully")
+                return creds
+            
+        except Exception as e:
+            self.logger.error(f"Error in OAuth flow: {str(e)}")
+            return None
+    
     def _build_service(self):
         """Build YouTube API service"""
         try:
-            # Create credentials object
-            creds = Credentials(
-                token=None,
-                refresh_token=self.credentials['refresh_token'],
-                token_uri='https://oauth2.googleapis.com/token',
-                client_id=self.credentials['client_id'],
-                client_secret=self.credentials['client_secret']
-            )
-            
-            # Refresh token
-            creds.refresh(Request())
+            if not self.credentials:
+                self.logger.error("No credentials available for building service")
+                return None
             
             # Build service
-            return build('youtube', 'v3', credentials=creds)
+            service = build('youtube', 'v3', credentials=self.credentials)
+            return service
             
         except Exception as e:
             self.logger.error(f"Error building YouTube service: {str(e)}")
